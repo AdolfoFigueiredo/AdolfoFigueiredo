@@ -16,15 +16,16 @@ Focado em construir sistemas escaláveis e automatizar infraestruturas. Acredito
 
 ---
 
-### 🛠️ Tecnologias & Stack
+### Tecnologias & Stack
 
-### 🛠️ Backend Stack
+**Backend & Core**
 <p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" alt="Java" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="40" alt="NodeJS" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="40" alt="Express" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" alt="Java" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40" title="Node.js" />
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="40" title="ExpressJS" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="40" alt="FastAPI" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="40" title="C" />
 </p>
 
 **DevOps, Cloud & Database**
@@ -38,9 +39,7 @@ Focado em construir sistemas escaláveis e automatizar infraestruturas. Acredito
 
 ---
 
-### 📊 Estatísticas e Atividade
-
-### 📊 Estatísticas
+### Estatísticas e Atividade
 
 <p align="center">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=AdolfoFigueiredo&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" alt="Stats de Adolfo" />
