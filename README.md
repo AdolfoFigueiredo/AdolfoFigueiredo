@@ -1,60 +1,53 @@
-# Adolfo Figueiredo — Portfolio
+# 👨🏻‍💻 Adolfo Figueiredo
 
-A premium, dark-cyber themed portfolio for a software engineer focused on
-**backend development, software architecture, and database design**.
+**`Backend Developer | DevOps & Cloud Enthusiast`**
 
-Built with **pure HTML5 and modern CSS3** — no frameworks, no build tools,
-no Node.js dependencies.
+Natural de Luanda, Angola 🇦🇴. Atualmente cursando Informática no **ITEL**.
+Focado em construir sistemas escaláveis e automatizar infraestruturas. Acredito que o código resolve problemas, mas a automação escala soluções.
 
-## 🎨 Design
+<p align="left">
+    <a href="https://github.com/AdolfoFigueiredo">
+        <img alt="Total de estrelas" src="https://custom-icon-badges.demolab.com/github/stars/AdolfoFigueiredo?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas" />
+    </a>
+    <a href="https://github.com/AdolfoFigueiredo?tab=followers">
+        <img alt="Seguidores" src="https://custom-icon-badges.demolab.com/github/followers/AdolfoFigueiredo?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white" />
+    </a>
+</p>
 
-- Graphite black background (`#0a0a0f`)
-- Neon cyan highlights (`#00f0ff`)
-- Glassmorphism cards with animated borders
-- Mobile-first responsive grid
-- Smooth scroll + reveal animations
-- Accessibility-first (semantic HTML, ARIA, focus states, reduced-motion)
+---
 
-## 📁 Structure
+### Tecnologias & Stack
 
-```
-/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
-└── README.md
-```
+**Backend & Core**
 
-## 🚀 Getting Started
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" alt="Java" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40" title="Node.js" />
 
-No build step required. Just open `index.html` in a browser.
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="40" title="ExpressJS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="40" alt="FastAPI" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="40" title="C" />
+</p>
 
-For the best experience, serve it locally:
+**DevOps, Cloud & Database**
 
-```bash
-# Python
-python3 -m http.server 8000
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="35" title="Docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" width="35" title="CI/CD" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" width="35" title="AWS" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="35" title="MySQL" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="35" title="Git" />
+</p>
 
-# Node (if available)
-npx serve .
+---
 
-# PHP
-php -S localhost:8000
-```
+### Estatísticas e Atividade
 
-Then visit `http://localhost:8000`.
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=AdolfoFigueiredo&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" alt="Stats de Adolfo" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AdolfoFigueiredo&theme=tokyonight&layout=compact&langs_count=8" alt="Linguagens de Adolfo" />
+</p>
 
-## ✏️ Customization
-
-- **Colors:** edit CSS variables in `:root` inside `css/style.css`
-- **Content:** edit sections directly in `index.html`
-- **Images:** drop files into `assets/images/` and reference them
-
-## 📄 License
-
-Personal portfolio — © 2026 Adolfo Figueiredo.
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AdolfoFigueiredo&theme=tokyonight" alt="Streak de Adolfo" />
+</p>
