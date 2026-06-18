@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adolfo Figueiredo — Software Engineer specializing in Backend Development, Software Architecture, and Database Design." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Adolfo Figueiredo — Software Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+<header class="nav" id="nav">
+  <div class="nav__container">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-bracket">&lt;</span>AF<span class="nav__logo-bracket">/&gt;</span>
+    </a>
+
+    <!-- Language Switcher -->
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-switch__btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/>
+        </svg>
+        <span class="lang-switch__current" id="langCurrent">EN</span>
+        <svg class="lang-switch__caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+      <div class="lang-switch__menu" id="langMenu" role="menu">
+        <button class="lang-switch__option" data-lang="en" role="menuitem">
+          <span>EN</span><span>English</span>
+        </button>
+        <button class="lang-switch__option" data-lang="pt" role="menuitem">
+          <span>PT</span><span>Português</span>
+        </button>
+        <button class="lang-switch__option" data-lang="es" role="menuitem">
+          <span>ES</span><span>Español</span>
+        </button>
+        <button class="lang-switch__option" data-lang="it" role="menuitem">
+          <span>IT</span><span>Italiano</span>
+        </button>
+      </div>
+    </div>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Primary">
+      <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+      <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="#architecture" class="nav__link" data-i18n="nav.architecture">Architecture</a>
+      <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="hero__status" data-i18n="hero.status">
+          <span class="hero__status-dot"></span>
+          Available for new opportunities
+        </p>
+        <h1 class="hero__title" data-lang="hero.title">
+          Adolfo <span class="text-gradient">Figueiredo</span>
+        </h1>
+        <p class="hero__role" data-i18n="hero.role">
+          Software Engineer <span class="hero__divider">·</span>
+          Backend Development <span class="hero__divider">·</span>
+          Software Architecture <span class="hero__divider">·</span>
+          Database Design
+        </p>
+        <p class="hero__intro" data-i18n="hero.intro">
+          I design and build resilient backend systems, scalable architectures, and
+          well-modeled databases. Focused on writing software that is maintainable,
+          observable, and built to last.
+        </p>
+        <div class="hero__cta" data-i18n="hero.cta">
+          <a href="#projects" class="btn btn--primary">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">01 — About</span>
+          <h2 class="section__title">Engineering with intent.</h2>
+        </headerj>
+
+        <div class="about">
+          <article class="glass about__summary reveal">
+            <h3 class="about__subtitle" data-i18n="about.subtitle">Professional Summary</h3>
+            <p>
+              Software engineer with a strong focus on backend systems, software
+              architecture, and database design. I enjoy turning ambiguous problems
+              into clear, maintainable solutions — from domain modeling and API
+              design to infrastructure and observability.
+            </p>
+            <p>
+              My work centers on building systems that are reliable under load,
+              easy to reason about, and simple to evolve. I care deeply about
+              clean abstractions, thoughtful trade-offs, and shipping software
+              that teams can confidently own.
+            </p>
+            <ul class="about__highlights">
+              <li>Backend-first engineering with a systems mindset</li>
+              <li>Domain-driven design and clean architecture</li>
+              <li>Relational and NoSQL database modeling</li>
+              <li>Scalable, observable, production-grade systems</li>
+            </ul>
+          </article>
+
+          <aside class="glass about__education reveal">
+            <h3 class="about__subtitle">Education</h3>
+            <div class="about__edu-item">
+              <div class="about__edu-meta">
+                <span class="about__edu-period">2023 — 2027</span>
+                <span class="about__edu-badge">Degree</span>
+              </div>
+              <h4>Informatic technician at ITEL</h4>
+              <p>At ITEL I gave a general knowledge about IT carrer, and I apply this knowledge to improve my know-how and my skills in software development. </p>
+            </div>
+            <div class="about__edu-item">
+              <div class="about__edu-meta">
+                <span class="about__edu-period">Continuous</span>
+                <span class="about__edu-badge">Self-directed</span>
+              </div>
+              <h4>Advanced Backend & Architecture</h4>
+              <p>Ongoing study of system design, performance engineering, and infrastructure.</p>
+            </div>
+          </aside>
+
+          <article class="glass about__languages reveal">
+            <h3 class="about__subtitle" data-i18n="about.lang.title">Languages</h3>
+            <ul class="lang-list">
+              <li class="lang-list__item">
+                <div class="lang-list__head">
+                  <span class="lang-list__name" data-i18n="about.lang.pt">Portuguese</span>
+                  <span class="lang-list__level" data-i18n="about.lang.pt.level">Native</span>
+                </div>
+                <div class="lang-list__bar">
+                  <div class="lang-list__fill" style="--fill: 100%"></div>
+                </div>
+              </li>
+              <li class="lang-list__item">
+                <div class="lang-list__head">
+                  <span class="lang-list__name" data-i18n="about.lang.en">English</span>
+                  <span class="lang-list__level" data-i18n="about.lang.en.level">Fluent</span>
+                </div>
+                <div class="lang-list__bar">
+                  <div class="lang-list__fill" style="--fill: 90%"></div>
+                </div>
+              </li>
+              <li class="lang-list__item">
+                <div class="lang-list__head">
+                  <span class="lang-list__name" data-i18n="about.lang.es">Spanish</span>
+                  <span class="lang-list__level" data-i18n="about.lang.es.level">Conversational</span>
+                </div>
+                <div class="lang-list__bar"><div class="lang-list__fill" style="--fill: 55%"></div></div>
+              </li>
+              <li class="lang-list__item">
+                <div class="lang-list__head">
+                  <span class="lang-list__name" data-i18n="about.lang.it">Italian</span>
+                  <span class="lang-list__level" data-i18n="about.lang.it.level">Basic</span>
+                </div>
+                <div class="lang-list__bar"><div class="lang-list__fill" style="--fill: 30%"></div></div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">02 — Technical Skills</span>
+          <h2 class="section__title">Tools of the trade.</h2>
+        </header>
+
+        <div class="skills">
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Languages</h3>
+            <div class="badges">
+              <span class="badge">Java</span>
+              <span class="badge">Python</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Bash</span>
+            </div>
+          </article>
+
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2"/>
+                <path d="M8 20h8M12 16v4"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Backend & APIs</h3>
+            <div class="badges">
+              <span class="badge">Node.js</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">gRPC</span>
+              <span class="badge">REST</span>
+              <span class="badge">GraphQL</span>
+              <span class="badge">WebSockets</span>
+              <span class="badge">Spring Boot</span>
+            </div>
+          </article>
+
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Databases</h3>
+            <div class="badges">
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">Redis</span>
+              <span class="badge">DynamoDB</span>
+              <span class="badge">MariaDB</span>
+            </div>
+          </article>
+
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Architecture</h3>
+            <div class="badges">
+              <span class="badge">Microservices</span>
+              <span class="badge">Event-Driven</span>
+              <span class="badge">Monorepo</span>
+              <span class="badge">CQRS</span>
+              <span class="badge">DDD</span>
+              <span class="badge">Hexagonal</span>
+            </div>
+          </article>
+
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 00-1-1.7l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.7l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                <path d="M3.3 7l8.7 5 8.7-5M12 22V12"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Infrastructure</h3>
+            <div class="badges">
+              <span class="badge">Docker</span>
+              <span class="badge">Kubernetes</span>
+              <span class="badge">AWS</span>
+              <span class="badge">Terraform</span>
+              <span class="badge">CI/CD</span>
+              <span class="badge">MinIO</span>
+              <span class="badge">Podman</span>
+              <span class="badge">Nginx</span>
+            </div>
+          </article>
+
+          <article class="glass skill-card reveal">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Tools & Practices</h3>
+            <div class="badges">
+              <span class="badge">Git</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Kafka</span>
+              <span class="badge">RabbitMQ</span>
+              <span class="badge">Observability</span>
+              <span class="badge">TDD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">03 — Featured Projects</span>
+          <h2 class="section__title">Selected work.</h2>
+        </header>
+
+        <div class="projects">
+
+          <!-- Project 1 -->
+          <article class="glass project reveal">
+            <div class="project__header">
+              <div class="project__meta">
+                <span class="project__number">01</span>
+                <h3 class="project__title">2AM Library</h3>
+              </div>
+              <span class="project__tag">Backend · Architecture</span>
+            </div>
+            <p class="project__description">
+              A modern library management platform designed around a clean
+              domain model. Built to handle complex cataloging, lending rules,
+              and multi-tenant operations with a focus on data integrity and
+              long-term maintainability.
+            </p>
+
+            <div class="project__blocks">
+              <div class="project__block">
+                <h4>Technical Highlights</h4>
+                <ul>
+                  <li>Domain-driven design with bounded contexts</li>
+                  <li>Event-sourced audit trail for lending operations</li>
+                  <li>Idempotent APIs and optimistic concurrency control</li>
+                  <li>Comprehensive test coverage with contract testing</li>
+                </ul>
+              </div>
+              <div class="project__block">
+                <h4>Architecture Highlights</h4>
+                <ul>
+                  <li>Hexagonal architecture isolating business rules</li>
+                  <li>Async event bus for cross-service communication</li>
+                  <li>Read/write model separation (CQRS)</li>
+                  <li>Containerized deployment with reproducible environments</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="badges">
+              <span class="badge">TypeScript</span>
+              <span class="badge">MariaDB</span>
+              <span class="badge">Podman</span>
+              <span class="badge">ExpressJS</span>
+              <span class="badge">Zod</span>
+              <span class="badge">NextJS</span>
+              <span class="badge">Jest</span>
+              <span class="badge">Redis</span>
+              <span class="badge">MinIO</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass project reveal">
+            <div class="project__header">
+              <div class="project__meta">
+                <span class="project__number">02</span>
+                <h3 class="project__title">Sona / KimboID</h3>
+              </div>
+              <span class="project__tag">Identity · Platform</span>
+            </div>
+            <p class="project__description">
+              An identity and authentication platform powering secure access
+              across multiple products. Designed as a centralized identity
+              layer with OAuth2/OIDC support, MFA, and fine-grained
+              authorization.
+            </p>
+
+            <div class="project__blocks">
+              <div class="project__block">
+                <h4>Technical Highlights</h4>
+                <ul>
+                  <li>OAuth 2.0 and OpenID Connect implementation</li>
+                  <li>Multi-factor authentication (TOTP, WebAuthn)</li>
+                  <li>Short-lived JWTs with secure refresh token rotation</li>
+                  <li>Rate limiting, anomaly detection, and audit logging</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="badges">
+              <span class="badge">TypeScript</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Redis</span>
+              <span class="badge">OAuth2</span>
+              <span class="badge">OIDC</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ARCHITECTURE ========== -->
+    <section class="section section--alt" id="architecture">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">04 — Architecture</span>
+          <h2 class="section__title">How I think about systems.</h2>
+        </header>
+
+        <div class="arch">
+
+          <article class="glass arch-card reveal">
+            <div class="arch-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/>
+              </svg>
+            </div>
+            <h3 class="arch-card__title">Monorepo Architecture</h3>
+            <p>
+              A single source of truth for services, shared libraries, and
+              infrastructure code. Enables atomic changes, consistent tooling,
+              and fast iteration across teams.
+            </p>
+            <ul class="arch-card__list">
+              <li>Workspaces with isolated dependency graphs</li>
+              <li>Shared contracts and generated clients</li>
+              <li>Affected-only CI for fast feedback loops</li>
+            </ul>
+          </article>
+
+          <article class="glass arch-card reveal">
+            <div class="arch-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                <circle cx="12" cy="16" r="1.5"/>
+              </svg>
+            </div>
+            <h3 class="arch-card__title">Authentication Flow</h3>
+            <p>
+              Secure, stateless authentication with short-lived access tokens,
+              rotating refresh tokens, and strong session controls. Designed
+              for both human users and service-to-service calls.
+            </p>
+            <ul class="arch-card__list">
+              <li>PKCE-based OAuth2 flows</li>
+              <li>Device-bound sessions and MFA enforcement</li>
+              <li>Centralized revocation and audit trail</li>
+            </ul>
+          </article>
+
+          <article class="glass arch-card reveal">
+            <div class="arch-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+                <path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>
+              </svg>
+            </div>
+            <h3 class="arch-card__title">Database Design</h3>
+            <p>
+              Carefully normalized schemas where it matters, pragmatic
+              denormalization for read paths. Strong typing, migrations as
+              code, and indexes driven by real query patterns.
+            </p>
+            <ul class="arch-card__list">
+              <li>Versioned migrations with rollback safety</li>
+              <li>Soft deletes, audit columns, and tenant isolation</li>
+              <li>Read replicas and caching layers for scale</li>
+            </ul>
+          </article>
+
+          <article class="glass arch-card reveal">
+            <div class="arch-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="arch-card__title">Infrastructure Overview</h3>
+            <p>
+              Infrastructure as code, immutable deployments, and
+              observability baked in from day one. Systems designed to fail
+              gracefully and recover automatically.
+            </p>
+            <ul class="arch-card__list">
+              <li>Declarative provisioning with Terraform</li>
+              <li>Structured logs, metrics, and distributed tracing</li>
+              <li>Blue/green and canary release strategies</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">05 — Contact</span>
+          <h2 class="section__title">Let's build something solid.</h2>
+        </header>
+
+        <div class="contact">
+          <p class="contact__intro">
+            Open to conversations about backend engineering, architecture
+            roles, and interesting technical problems. The best way to reach
+            me is below.
+          </p>
+
+          <div class="contact__grid">
+            <a class="glass contact-card reveal" href="mailto:adolfo.figueiredo@outlook.com" aria-label="Send email">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="M3 7l9 6 9-6"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>adolfo.figueiredo@outlook.com</p>
+              </div>
+            </a>
+            <a class="glass contact-card reveal" href="https://github.com/AdolfoFigueiredo" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>GitHub</h3>
+                <p>github.com/AdolfoFigueiredo</p>
+              </div>
+            </a>
+            <a class="glass contact-card reveal" href="https://linkedin.com/adolfo-figueiredo-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zM6.5 8.3a1.8 1.8 0 110-3.5 1.8 1.8 0 010 3.5zM19 19h-3v-4.7c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V19h-3v-9h2.9v1.2h.1a3.2 3.2 0 012.9-1.6c3.1 0 3.7 2 3.7 4.7V19z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/adolfo-figueiredo-</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">Designed by Adolfo Figueiredo © 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
