@@ -49,6 +49,9 @@ export const metadata: Metadata = {
     description: site.description,
   },
   robots: { index: true, follow: true },
+  other: {
+    "theme-color": "#141414",
+  },
 };
 
 export default function RootLayout({
@@ -59,7 +62,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}`,
+            __html: `try{var t=localStorage.getItem('theme');if(!t){t='dark'}document.documentElement.setAttribute('data-theme',t)}catch(e){}`,
           }}
         />
       </head>

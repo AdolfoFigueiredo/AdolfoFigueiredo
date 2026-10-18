@@ -96,6 +96,23 @@
   color: var(--text);
 }
 
+.header__cta {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding-inline: 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 150ms ease;
+}
+
+.header__cta:hover {
+  background: var(--accent-hover);
+}
+
 .header__burger {
   display: none;
   width: 36px;
@@ -211,15 +228,21 @@
 
 .hero__name {
   margin-top: 20px;
+  font-family: var(--font-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: clamp(2.2rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
   color: var(--text);
 }
 
 .hero__role {
-  margin-top: 10px;
-  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  margin-top: 14px;
+  font-family: var(--font-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
   font-weight: 500;
   color: var(--accent);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .hero__intro {
@@ -839,25 +862,23 @@
   gap: 12px;
 }
 
-.footer__copy,
-.footer__note {
+.footer__copy {
   font-size: 0.85rem;
   color: var(--text-tertiary);
 }
 
-.footer__nav {
+.footer__social {
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
+  gap: 20px;
 }
 
-.footer__nav a {
+.footer__social a {
   font-size: 0.85rem;
   color: var(--text-secondary);
   transition: color 150ms ease;
 }
 
-.footer__nav a:hover {
+.footer__social a:hover {
   color: var(--accent);
 }
 

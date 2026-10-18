@@ -1,15 +1,16 @@
 export const site = {
   name: "Adolfo Figueiredo",
+  logo: "AdolfoFigueiredo",
   handle: "@AdolfoFigueiredo",
-  title: "Adolfo Figueiredo — Developer & Systems Builder",
+  title: "Adolfo Figueiredo — Full Stack Developer",
   description:
-    "Developer backend focado em modelação de dados, APIs e sistemas que aguentam produção. TypeScript, Node.js, PostgreSQL e MySQL.",
-  tagline: "Developer & Systems Builder",
+    "Full Stack Developer focado em modelação de dados, APIs e sistemas que aguentam produção. TypeScript, Node.js, PostgreSQL e MySQL.",
+  tagline: "Full Stack developer",
   greeting: "Olá, sou",
   intro:
     "Transformo problemas complexos em sistemas funcionais, com foco em backend, dados e modelação de base de dados.",
   location: "Luanda, Angola",
-  email: "calebfigueiredo28@gmail.com",
+  email: "adolfo.figueiredo@outlook.com",
   github: "https://github.com/AdolfoFigueiredo",
   linkedin: "https://www.linkedin.com/in/adolfofigueiredo28/",
   url: "https://adolfofigueiredo.me",

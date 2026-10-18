@@ -10,7 +10,6 @@ const NAV = [
   { href: "/experiencia", label: "Experiência" },
   { href: "/timeline", label: "Timeline" },
   { href: "/blog", label: "Blog" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export default function Header() {
@@ -23,7 +22,7 @@ export default function Header() {
     <header className="header">
       <div className="container header__inner">
         <Link href="/" className="header__logo" aria-label={`${site.name} — início`}>
-          Adolfo<span className="header__logo-dot">.</span>dev
+          {site.logo}
         </Link>
 
         <nav className="header__nav" aria-label="Principal">
@@ -39,6 +38,13 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
+          <a
+            href={`mailto:${site.email}`}
+            className="header__cta"
+            aria-label={`Contactar por email — ${site.email}`}
+          >
+            Contacto
+          </a>
           <ThemeToggle />
           <a
             href={site.github}
@@ -66,14 +72,13 @@ export default function Header() {
         <nav className="header__mobile" aria-label="Principal (mobile)">
           <div className="container">
             {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`header__mobile-link${pathname === item.href ? " is-active" : ""}`}
-              >
+              <Link key={item.href} href={item.href} className="header__mobile-link">
                 {item.label}
               </Link>
             ))}
+            <a href={`mailto:${site.email}`} className="header__mobile-link">
+              Contacto
+            </a>
           </div>
         </nav>
       )}
@@ -82,7 +87,7 @@ export default function Header() {
 }
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
     const current = document.documentElement.getAttribute("data-theme");
