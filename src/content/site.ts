@@ -1,10 +1,13 @@
 export const site = {
-  name: "Caleb Figueiredo",
+  name: "Adolfo Figueiredo",
   handle: "@AdolfoFigueiredo",
-  title: "Caleb Figueiredo — Backend Developer",
+  title: "Adolfo Figueiredo — Developer & Systems Builder",
   description:
-    "Backend developer focado em modelação de dados, APIs e sistemas que aguentam produção. TypeScript, Node.js, PostgreSQL e MySQL.",
-  role: "Backend Developer",
+    "Developer backend focado em modelação de dados, APIs e sistemas que aguentam produção. TypeScript, Node.js, PostgreSQL e MySQL.",
+  tagline: "Developer & Systems Builder",
+  greeting: "Olá, sou",
+  intro:
+    "Transformo problemas complexos em sistemas funcionais, com foco em backend, dados e modelação de base de dados.",
   location: "Luanda, Angola",
   email: "calebfigueiredo28@gmail.com",
   github: "https://github.com/AdolfoFigueiredo",

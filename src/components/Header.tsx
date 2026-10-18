@@ -1,38 +1,40 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { site } from "@/content/site";
 
 const NAV = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#experiencia", label: "Experiência" },
-  { href: "#projectos", label: "Projectos" },
-  { href: "#stack", label: "Stack" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/sobre", label: "Sobre" },
+  { href: "/experiencia", label: "Experiência" },
+  { href: "/timeline", label: "Timeline" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const close = () => setMenuOpen(false);
-    window.addEventListener("resize", close);
-    return () => window.removeEventListener("resize", close);
-  }, []);
+  useEffect(() => setMenuOpen(false), [pathname]);
 
   return (
     <header className="header">
       <div className="container header__inner">
         <Link href="/" className="header__logo" aria-label={`${site.name} — início`}>
-          Caleb<span className="header__logo-dot">.</span>dev
+          Adolfo<span className="header__logo-dot">.</span>dev
         </Link>
 
         <nav className="header__nav" aria-label="Principal">
           {NAV.map((item) => (
-            <a key={item.href} href={item.href} className="header__link">
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`header__link${pathname === item.href ? " is-active" : ""}`}
+            >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -64,14 +66,13 @@ export default function Header() {
         <nav className="header__mobile" aria-label="Principal (mobile)">
           <div className="container">
             {NAV.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
-                className="header__mobile-link"
-                onClick={() => setMenuOpen(false)}
+                className={`header__mobile-link${pathname === item.href ? " is-active" : ""}`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>

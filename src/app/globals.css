@@ -20,10 +20,10 @@
   --text-tertiary: #8a8279;
 
   /* Único acento com significado */
-  --accent: #3f5d4b;
-  --accent-hover: #2f4639;
+  --accent: #0e7c6b;
+  --accent-hover: #0a6355;
   --accent-contrast: #ffffff;
-  --accent-soft: #eef2ef;
+  --accent-soft: #e6f2ef;
 
   /* Estados */
   --success: #4a7c59;
@@ -46,10 +46,10 @@
   --text-secondary: #a8a5a1;
   --text-tertiary: #7d7a76;
 
-  --accent: #7fa894;
-  --accent-hover: #97bca9;
+  --accent: #6fc7b1;
+  --accent-hover: #86d3c0;
   --accent-contrast: #17171a;
-  --accent-soft: #232b27;
+  --accent-soft: #1d2b27;
 
   --success: #7fa894;
   --error: #d08484;
