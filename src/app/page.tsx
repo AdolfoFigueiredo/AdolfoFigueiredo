@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 
 export default function Home() {
   return (

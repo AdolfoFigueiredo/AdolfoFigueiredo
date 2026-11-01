@@ -1,4 +1,5 @@
-import { site, skills } from "@/content/site";
+import { site } from "@content/site";
+import { skills } from "@content/skills";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

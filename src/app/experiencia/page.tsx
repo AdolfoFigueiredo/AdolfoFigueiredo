@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { timeline, site } from "@/content/site";
+import { timeline } from "@content/timeline";
+import { site } from "@content/site";
 
 export const metadata: Metadata = {
   title: "Experiência",
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function ExperiencePage() {
-  const entries = timeline.filter((entry) => entry.kind !== "project");
-
   return (
     <>
       <section className="section section--flush page-head">
@@ -22,7 +21,7 @@ export default function ExperiencePage() {
           </header>
 
           <ol className="track">
-            {entries.map((entry, index) => (
+            {timeline.map((entry, index) => (
               <li
                 key={entry.id}
                 className={`track__item reveal${index === 0 ? " track__item--latest" : ""}`}

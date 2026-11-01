@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 
 const NAV = [
   { href: "/sobre", label: "Sobre" },

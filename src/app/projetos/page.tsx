@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { timeline, site } from "@/content/site";
+import { projects } from "@content/projects";
+import { site } from "@content/site";
 
 export const metadata: Metadata = {
   title: "Projetos",
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  const projects = timeline.filter((entry) => entry.kind === "project");
-
   return (
     <section className="section section--flush page-head">
       <div className="container">
@@ -26,11 +25,9 @@ export default function ProjectsPage() {
               <div className="project__head">
                 <div>
                   <h3 className="t-h3">{project.title}</h3>
-                  <p className="project__tagline">{project.context}</p>
+                  <p className="project__tagline">{project.description}</p>
                 </div>
               </div>
-
-              <p className="t-body">{project.summary}</p>
 
               <ul className="bullets">
                 {project.highlights.map((h) => (
@@ -47,10 +44,9 @@ export default function ProjectsPage() {
               </div>
 
               <div className="project__foot">
-                <span className="project__role">{project.period}</span>
                 <div className="project__links">
-                  {project.repo ? (
-                    <a href={project.repo} target="_blank" rel="noopener noreferrer" className="link-arrow">
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="link-arrow">
                       Código →
                     </a>
                   ) : (

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllPosts, formatDate } from "@/lib/blog";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 import CopyLinkButton from "@/components/CopyLinkButton";
 
 interface Params {

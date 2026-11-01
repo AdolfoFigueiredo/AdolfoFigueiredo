@@ -42,6 +42,12 @@ editorial, paleta neutra, foco em leitura longa.
 ## Estrutura
 
 ```
+content/
+├── site.ts           Identidade, hero, links e SEO (dados do autor)
+├── timeline.ts       Percurso unificado (work, project, education)
+├── skills.ts         Stack / habilidades por categoria
+└── posts/            Posts em Markdown
+
 src/
 ├── app/
 │   ├── layout.tsx        Layout raiz, fontes, metadata
@@ -57,13 +63,18 @@ src/
 │   ├── timeline/         Linha do tempo
 │   └── blog/             Blog (+ [slug])
 ├── components/           Header, Footer, RevealProvider, CopyLinkButton
-└── content/
-    ├── site.ts           Projectos, experiência, stack (dados tipados)
-    └── posts/            Posts em Markdown
+└── lib/
+    └── blog.ts           Leitura de posts (frontmatter + Markdown)
+
 ```
 
-O conteúdo vive em `src/content/site.ts` como dados tipados em TypeScript.
-Adicionar um projecto = acrescentar um objecto. Zero JSX.
+Todo o conteúdo do site vive na raiz em `/content/`, organizado por domínio:
+`site.ts` (identidade/hero), `timeline.ts` (percurso), `skills.ts` (stack) e
+`posts/` (artigos em Markdown).
+
+Os dados tipados em TypeScript são importados via alias `@content/*`
+(resolução para `./content/*`). Adicionar um projecto = acrescentar um objecto
+na timeline. Zero JSX. Adicionar um post = criar um `.md` em `content/posts/`.
 
 ### Design system
 
