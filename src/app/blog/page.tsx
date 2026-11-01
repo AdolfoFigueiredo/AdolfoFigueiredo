@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, formatDate } from "@/lib/blog";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 
 export const metadata: Metadata = {
   title: "Blog",

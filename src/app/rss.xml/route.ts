@@ -1,5 +1,5 @@
 import { getAllPosts } from "@/lib/blog";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 
 function escapeXml(value: string) {
   return value

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Inter, Newsreader, JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RevealProvider from "@/components/RevealProvider";
-import { site } from "@/content/site";
+import { site } from "@content/site";
 import "./globals.css";
 import "./components.css";
 
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="pt" className={`${sans.variable} ${display.variable} ${mono.variable}`}>
       <head>
