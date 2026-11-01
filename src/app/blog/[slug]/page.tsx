@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllPosts, formatDate } from "@/lib/blog";
 import { site } from "@/content/site";
+import CopyLinkButton from "@/components/CopyLinkButton";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -78,8 +79,9 @@ export default async function PostPage({ params }: Params) {
               LinkedIn
             </a>
             <a href={twitter} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
-              Twitter
+              X / Twitter
             </a>
+            <CopyLinkButton url={shareUrl} />
           </div>
         </footer>
       </div>

@@ -14,21 +14,27 @@ export default function AboutPage() {
           <header className="section__header">
             <span className="t-label reveal">Sobre mim</span>
             <h1 className="t-h1 reveal">O domínio vem antes da tecnologia.</h1>
+            <p className="t-body section__lead reveal">
+              Desenvolvedor backend e system architecture.
+            </p>
           </header>
 
           <div className="about">
             <div className="about__text">
               <div className="about__prose reveal">
                 <p>
-                  Sou developer backend e trabalho na fronteira entre o modelo de dados e o
-                  sistema que o serve. TypeScript, Node.js, PostgreSQL e MySQL — e o SQL
-                  difícil que fica quando o ORM já não chega.
+                  A minha paixão por jogos e a curiosidade de saber como as coisas funcionam por debaixo dos panos, 
+                  me levou ao caminho que sigo hoje. <br />
+                  
+                  Sou Técnico de Informática e Atuo fortemente como desenvolvedor de Software, 
+                  
+                  trabalho na fronteira entre o modelo de dados e o
+                  sistema que o serve. NodeJS, NextJS, Java, PostgreSQL e MySQL - estás são algumas das ferramentas que me ajudam no dia-a-dia.  
                 </p>
                 <p>
                   O ponto de partida é sempre o mesmo: entender o domínio antes de escolher a
-                  stack. Num projecto de gestão de estágios, isso significou transformar regras
-                  de negócio sobre aulas, estagiários e avaliações num esquema relacional de 21
-                  entidades. Noutro, significou decidir o que vive em SQL e o que vive no ORM.
+                  stack. Isso significa traduzir regras de negócio complexas em entidades e
+                  relações bem definidas.
                 </p>
                 <p>
                   Gosto de SQL mais do que a maioria dos programadores de backend admite
@@ -79,6 +85,30 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="cta reveal">
+            <span className="t-label">Contacto</span>
+            <h2 className="t-h2">Vamos conversar.</h2>
+            <p className="t-body section__lead">
+              Se tens um problema complexo, uma arquitectura para desenhar ou um SQL que não
+              deixa de doer — o próximo passo é conversar.
+            </p>
+            <div className="cta__actions">
+              <a href={`mailto:${site.email}`} className="btn btn--primary">
+                Entre em contacto
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href={site.github} target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </section>

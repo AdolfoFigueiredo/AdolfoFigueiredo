@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export default function RevealProvider() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
 
@@ -26,7 +29,7 @@ export default function RevealProvider() {
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  });
+  }, [pathname]);
 
   return null;
 }

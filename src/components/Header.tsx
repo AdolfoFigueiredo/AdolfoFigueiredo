@@ -8,7 +8,7 @@ import { site } from "@/content/site";
 const NAV = [
   { href: "/sobre", label: "Sobre" },
   { href: "/experiencia", label: "Experiência" },
-  { href: "/timeline", label: "Timeline" },
+  { href: "/projetos", label: "Projetos" },
   { href: "/blog", label: "Blog" },
 ];
 

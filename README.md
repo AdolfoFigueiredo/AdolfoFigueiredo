@@ -1,4 +1,4 @@
-# Caleb Figueiredo — Portfólio
+# Adolfo Figueiredo — Portfólio
 
 **Backend Developer · Database Design · Systems Architecture**
 Luanda, Angola
@@ -13,9 +13,9 @@ editorial, paleta neutra, foco em leitura longa.
 - **Site:** [adolfofigueiredo.me](https://adolfofigueiredo.me)
 - **GitHub:** [@AdolfoFigueiredo](https://github.com/AdolfoFigueiredo)
 - **LinkedIn:** [in/adolfofigueiredo28](https://www.linkedin.com/in/adolfofigueiredo28/)
-- **Email:** calebfigueiredo28@gmail.com
+- **Email:** adolfo.figueiredo28@outlook.com
 
-> O handle no GitHub é `@AdolfoFigueiredo`; o nome civil é Caleb Figueiredo.
+> O handle no GitHub é `@AdolfoFigueiredo`; o nome civil é Adolfo Figueiredo.
 
 ---
 
@@ -24,7 +24,7 @@ editorial, paleta neutra, foco em leitura longa.
 | Projecto | Descrição |
 | -------- | --------- |
 | [2AM Library](https://github.com/AdolfoFigueiredo/2AM_Library) | Sistema integrado de gestão de livraria (omnichannel). Express + Prisma + Next.js, 18 tabelas, 5 views e 2 stored procedures. |
-| Prumo | Plataforma de gestão de estágios. Trabalho em equipa — backend (NestJS + Prisma), frontend (Next.js), modelação de dados (21 entidades) e deploy. |
+| Prumo | Plataforma de gestão de estágios. Ciclo completo: backend (NestJS + Prisma), frontend (Next.js), modelação de dados (21 entidades) e deploy. |
 | [GitHub Activity CLI](https://github.com/AdolfoFigueiredo/github-activity) | CLI em Java que mostra a actividade de um utilizador do GitHub no terminal. |
 
 ---
@@ -45,18 +45,21 @@ editorial, paleta neutra, foco em leitura longa.
 src/
 ├── app/
 │   ├── layout.tsx        Layout raiz, fontes, metadata
-│   ├── page.tsx          Home (todas as secções)
+│   ├── page.tsx          Home (hero + contacto)
 │   ├── globals.css       Design tokens + reset + tipografia
 │   ├── components.css    Componentes
 │   ├── not-found.tsx     404
-│   ├── sitemap.ts
-│   └── robots.ts
-├── components/
-│   ├── Header.tsx        Navegação + toggle de tema
-│   ├── Footer.tsx
-│   └── RevealProvider.tsx  Animações no scroll
+│   ├── sitemap.ts        Sitemap (todas as rotas + posts)
+│   ├── robots.ts
+│   ├── rss.xml/route.ts  RSS
+│   ├── sobre/            Sobre + stack/skills
+│   ├── experiencia/      Timeline de experiências + projectos
+│   ├── timeline/         Linha do tempo
+│   └── blog/             Blog (+ [slug])
+├── components/           Header, Footer, RevealProvider, CopyLinkButton
 └── content/
-    └── site.ts           Projectos, experiência e stack (dados tipados)
+    ├── site.ts           Projectos, experiência, stack (dados tipados)
+    └── posts/            Posts em Markdown
 ```
 
 O conteúdo vive em `src/content/site.ts` como dados tipados em TypeScript.
@@ -65,9 +68,8 @@ Adicionar um projecto = acrescentar um objecto. Zero JSX.
 ### Design system
 
 Os tokens estão em `src/app/globals.css`. Paleta neutra quente ("Warm Neutral"),
-com um único acento verde-floresta. Tema claro e escuro via
-`data-theme` no `<html>`, com persistência em `localStorage` e sem flash
-de tema (script inline no `<head>`).
+com um único acento âmbar. Tema claro e escuro via `data-theme` no `<html>`,
+com persistência em `localStorage` e sem flash de tema (script inline no `<head>`).
 
 ---
 
@@ -91,4 +93,4 @@ A primeira versão do portfólio (HTML/CSS/JS puro) está preservada em
 
 ## Licença
 
-Ver [LICENSE](./LICENSE).
+Portfólio pessoal — © 2026 Adolfo Figueiredo.

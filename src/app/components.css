@@ -192,6 +192,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
   padding-block: clamp(80px, 14vw, 160px) clamp(60px, 8vw, 100px);
 }
 
@@ -207,11 +208,8 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    linear-gradient(to right, var(--border) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-  background-size: 72px 72px;
-  opacity: 0.5;
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 28px 28px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 40%, transparent 100%);
 }
 
@@ -345,6 +343,15 @@
 .track__item .t-body {
   margin-top: 8px;
   max-width: 62ch;
+}
+
+/* Marco atual — destaque sutil de peso maior */
+.track__item--latest .track__marker {
+  box-shadow: 0 0 0 6px var(--accent-soft);
+}
+
+.track__item--latest .t-h3 {
+  color: var(--accent);
 }
 
 /* ---------- Blog ---------- */
@@ -801,21 +808,57 @@
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 20px;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  transition: border-color 200ms ease;
+}
+
+.skill-group:hover {
+  border-color: var(--border-strong);
 }
 
 .skill-group__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-sans), sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
+}
+
+.skill-group__title::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 .skill-group .badges {
-  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.skill-group .badge {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 0.8rem;
 }
 
 /* ---------- Contact ---------- */
@@ -845,6 +888,29 @@
   font-size: 0.95rem;
   color: var(--text);
   word-break: break-word;
+}
+
+/* ---------- CTA ---------- */
+
+.cta {
+  padding: clamp(32px, 5vw, 56px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.cta .section__lead {
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+.cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
 }
 
 /* ---------- Footer ---------- */

@@ -30,9 +30,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: site.title,
-    template: "%s · Adolfo Figueiredo",
+    template: `%s · ${site.name}`,
   },
   description: site.description,
+  alternates: {
+    types: {
+      "application/rss+xml": `${site.url}/rss.xml`,
+    },
+  },
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
   openGraph: {
