@@ -1,0 +1,42 @@
+# dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.*
+
+# next.js
+.next
+out
+build
+next-env.d.ts
+*.tsbuildinfo
+
+# git
+.git
+.gitignore
+.gitattributes
+
+# env
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# editor / os
+.vscode
+.idea
+.DS_Store
+
+# docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.yaml
+
+# docs / legacy
+legacy
+README.md
